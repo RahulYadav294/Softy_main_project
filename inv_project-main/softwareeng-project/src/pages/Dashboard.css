@@ -1,0 +1,59 @@
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 1.25rem;
+  border: 1px solid var(--border-color); /* Added explicit border to reinforce clean look */
+}
+
+/* Subtle, muted colors for icons in the minimalist theme */
+.stat-icon-wrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary); /* Remove strong colors */
+  border: 1px solid var(--border-color);
+}
+
+.stat-icon-wrapper.blue { color: #3b82f6; }
+.stat-icon-wrapper.red { color: #ef4444; }
+.stat-icon-wrapper.green { color: #10b981; }
+.stat-icon-wrapper.purple { color: #8b5cf6; }
+
+.stat-details h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.recent-sales-card {
+  padding: 2rem;
+}
+
+.recent-sales-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.mt-4 { margin-top: 1rem; }
+.text-center { text-align: center; color: var(--text-secondary); }
